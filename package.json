@@ -2,14 +2,19 @@
   "name": "q5b-base",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "format": "prettier --write ."
+  },
   "private": true,
-  "dependencies": {},
   "devDependencies": {
+    "@nestjs/cli": "^10.2.1",
     "@nx/js": "17.2.0",
-    "nx": "17.2.0"
+    "nx": "17.2.0",
+    "typescript": "^5.3.3",
+    "prettier": "^3.0.0"
   },
   "workspaces": [
+    "apps/*",
     "packages/*"
   ]
 }
