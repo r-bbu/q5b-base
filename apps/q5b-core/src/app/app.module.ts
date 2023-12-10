@@ -10,9 +10,16 @@ import { CatsController } from './modules/cats/cats.controller';
 import { DogsModule } from './modules/dogs/dogs.module';
 import { MiddlewaresModule } from './modules/middlewares/middlewares.module';
 import { LoggerMiddleware } from './modules/middlewares/logger.middleware';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [DogsModule, MiddlewaresModule],
+  imports: [
+    DogsModule,
+    MiddlewaresModule,
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }),
+  ],
   controllers: [AppController, CatsController],
   providers: [AppService],
 })
