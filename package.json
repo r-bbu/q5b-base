@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky install"
   },
   "private": true,
   "devDependencies": {
@@ -12,7 +13,8 @@
     "@nx/js": "17.2.0",
     "nx": "17.2.0",
     "prettier": "^3.0.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "husky": "^8.0.0"
   },
   "workspaces": [
     "apps/*",
