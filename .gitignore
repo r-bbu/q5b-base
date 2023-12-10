@@ -40,5 +40,8 @@ Thumbs.db
 
 .nx/cache
 
-# Postgre Volume
+# Postgres Volume
 postgres-data
+
+# ENV
+*/**/*.env
