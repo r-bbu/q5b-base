@@ -16,7 +16,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     console.log('PAYLOAD: ', payload);
     return {
       id: payload.sub,
-      email: payload.email,
+      email: payload.username,
     };
   }
 }
