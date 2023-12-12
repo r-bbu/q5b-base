@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 
-type User = {
+export type User = {
   id: string;
   email: string;
   password: string;

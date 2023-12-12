@@ -12,6 +12,7 @@ import { MiddlewaresModule } from './modules/middlewares/middlewares.module';
 import { LoggerMiddleware } from './modules/middlewares/logger.middleware';
 import { ConfigModule } from '@nestjs/config';
 import { UserModule } from './modules/user/user.module';
+import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { UserModule } from './modules/user/user.module';
       isGlobal: true,
     }),
     UserModule,
+    AuthModule,
   ],
   controllers: [AppController, CatsController],
   providers: [AppService],
