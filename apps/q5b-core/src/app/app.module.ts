@@ -11,6 +11,7 @@ import { DogsModule } from './modules/dogs/dogs.module';
 import { MiddlewaresModule } from './modules/middlewares/middlewares.module';
 import { LoggerMiddleware } from './modules/middlewares/logger.middleware';
 import { ConfigModule } from '@nestjs/config';
+import { UserModule } from './modules/user/user.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { ConfigModule } from '@nestjs/config';
     ConfigModule.forRoot({
       isGlobal: true,
     }),
+    UserModule,
   ],
   controllers: [AppController, CatsController],
   providers: [AppService],
